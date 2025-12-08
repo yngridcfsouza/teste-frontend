@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Editar pergunta - Doity</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <iframe-ns></iframe-ns>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ajax loader -->
+    <ajax-loader></ajax-loader>
+
+    <div id="wrapper">
+      <div class="container" style="width: 100% !important">
+        <!-- menu -->
+        <main-menu></main-menu>
+
+        <div class="holder-parent">
+          <div class="holder-left">
+            <!-- sidebar -->
+            <sidebar-menu></sidebar-menu>
+
+            <!-- modal credenciamento -->
+            <modal-credenciamento></modal-credenciamento>
+          </div>
+
+          <div class="holder">
+            <!-- headbar doity -->
+            <headbar-doity></headbar-doity>
+
+            <div class="__left __center-mobile">
+              <div class="breadcrumb" style="padding: 0 35px">
+                <p
+                  class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"
+                >
+                  <a href="https://doity.com.br/admin/eventos/painel/279481"
+                    >Painel</a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087"
+                      stroke="#FF2B34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path></svg
+                  >Editar pergunta
+                </p>
+                <span
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: fit-content;
+                  "
+                  >Editar pergunta</span
+                >
+              </div>
+
+              <div id="modal-help" class="contrato modal modal-large">
+                <div class="modal-header" style="padding: 14px 15px">
+                  <button
+                    class="close fechar"
+                    aria-hidden="true"
+                    id="ln_fechar_help"
+                    data-dismiss="modal"
+                    type="button"
+                  >
+                    ×
+                  </button>
+                  <span
+                    ><a href="" target="_blank" id="bt-abrir-na-central"
+                      >Abrir em outra aba <i class="fa fa-external-link"></i></a
+                  ></span>
+                </div>
+
+                <div class="modal-body">
+                  <iframe
+                    frameborder="0"
+                    height="465px"
+                    width="470px"
+                    scrolling="yes"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto"
+            >
+              <div class="emails">
+                <div class="box">
+                  <div class="title">
+                    <h2>Editar pergunta</h2>
+                    <img src="../../assets/images/title-hide.gif" alt="" />
+                  </div>
+
+                  <div class="content forms">
+                    <div class="mensagem"></div>
+
+                    <form
+                      action="https://doity.com.br/admin/pesquisas_perguntas/edit/11638"
+                      novalidate="novalidate"
+                      id="PesquisaAdminEditForm"
+                      method="post"
+                      accept-charset="utf-8"
+                    >
+                      <div style="display: none">
+                        <input
+                          type="hidden"
+                          name="_method"
+                          value="POST"
+                        /><input
+                          type="hidden"
+                          name="data[_Token][key]"
+                          value="2ba977e6702c1b47173224dc71f31cd6368a10499c9dd7ce0281c6d2351d695d1145c4faaaa1d9950ad56b0dbffa69e0473c1c01517cfbee718381c14de5e8ae"
+                          id="Token815523484"
+                        />
+                      </div>
+                      <input
+                        type="hidden"
+                        name="data[PesquisaPergunta][id]"
+                        value="11638"
+                        id="PesquisaPerguntaId"
+                      />
+                      <div class="input text">
+                        <label for="">Pergunta*</label
+                        ><input
+                          name="data[PesquisaPergunta][descricao]"
+                          id=""
+                          class="perguntas"
+                          value="Como você avaliaria sua experiência geral no evento?"
+                          maxlength="255"
+                          type="text"
+                        />
+                      </div>
+                      <div class="input checkbox">
+                        <input
+                          type="hidden"
+                          name="data[PesquisaPergunta][obrigatorio]"
+                          id="PesquisaPerguntaObrigatorio_"
+                          value="0"
+                        /><input
+                          type="checkbox"
+                          name="data[PesquisaPergunta][obrigatorio]"
+                          value="1"
+                          id="PesquisaPerguntaObrigatorio"
+                        /><label for="PesquisaPerguntaObrigatorio"
+                          >Obrigatório</label
+                        >
+                      </div>
+                      <div class="row buttons">
+                        <div class="submit">
+                          <input type="submit" value="Alterar" />
+                        </div>
+                        <div style="display: none">
+                          <input
+                            type="hidden"
+                            name="data[_Token][fields]"
+                            value="2d012787cbb3931a33b59151f6717abaf8c0f53f%3APesquisaPergunta.id"
+                            id="TokenFields14594041"
+                          /><input
+                            type="hidden"
+                            name="data[_Token][unlocked]"
+                            value=""
+                            id="TokenUnlocked1254747107"
+                          />
+                        </div>
+                        <div class="cancel">
+                          <a
+                            href="https://doity.com.br/admin/pesquisas_perguntas/index/279481"
+                            >Cancelar</a
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bar -->
+            <footer-bar></footer-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-info-feedback-pos-evento"
+      class="modal hide fade modal-medium"
+      role="dialog"
+      aria-labelledby="modal-info-feedback-pos-eventoLabel"
+      aria-hidden="true"
+      style="top: 280px"
+    >
+      <button
+        type="button"
+        id="btn-fechar-info-feedback-pos-evento"
+        class="close feedback-pos-close"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+      <div
+        class="modal-body modal-feed-back-pos-evento"
+        style="font-size: 13px; min-height: 470px"
+      >
+        <h1>Queremos a sua opinião!</h1>
+
+        <p>Prezado(a) <b>Administrator</b>,</p>
+
+        <p>
+          A Doity evoluiu todos esses anos sempre ouvindo o feedback dos nossos
+          clientes e não queremos parar por aqui!
+        </p>
+
+        <p>
+          Sabemos como é difícil e trabalhoso organizar eventos, e nossa missão
+          é justamente facilitar esse trabalho e te ajudar a focar no que é mais
+          importante: a qualidade do seu evento!
+        </p>
+
+        <p>
+          E para fazer uma plataforma cada vez melhor, queremos a sua ajuda
+          respondendo um rápido questionário
+        </p>
+
+        <p id="strong-modal-feedback">Muito obrigado e até o próximo evento!</p>
+
+        <div>
+          <a
+            href="https://forms.gle/N36a7xuTSTG9S8qXA"
+            target="_blank"
+            id="reponder-questionario-destruir-modal"
+            ><button id="btn-modal-feedback-pos-evento">
+              Responder Questionario
+            </button></a
+          >
+
+          <a href="#" id="responder-mais-tarde-feedback-pos-modal"
+            >Responder Mais Tarde</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts para importação dos componentes -->
+    <script src="../../components/ajax-loader.js" defer></script>
+    <script src="../../components/main-menu.js" defer></script>
+    <script src="../../components/iframe-ns.js" defer></script>
+    <script src="../../components/sidebar-menu.js" defer></script>
+    <script src="../../components/modal-credenciamento.js" defer></script>
+    <script src="../../components/headbar-doity.js" defer></script>
+    <script src="../../components/footer-bar.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Editar pesquisa - Doity</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="https://grcmlesydpcd.objectstorage.sa-saopaulo-1.oci.customer-oci.com/p/OQwcvnO-c63O08Gc2Kv4OTbJttj5ik60dguiDIyyQ0wuo5SWn-jHOLW9wNbylNqI/n/grcmlesydpcd/b/dtysppobjmntbkp01/o/media/doity/favicon.png"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <iframe-ns></iframe-ns>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ajax loader -->
+    <ajax-loader></ajax-loader>
+
+    <div id="wrapper">
+      <div class="container" style="width: 100% !important">
+        <!-- menu -->
+        <main-menu></main-menu>
+
+        <div class="holder-parent">
+          <div class="holder-left">
+            <!-- sidebar -->
+            <sidebar-menu></sidebar-menu>
+
+            <!-- modal credenciamento -->
+            <modal-credenciamento></modal-credenciamento>
+          </div>
+
+          <div class="holder">
+            <!-- headbar doity -->
+            <headbar-doity></headbar-doity>
+
+            <div class="__left __center-mobile">
+              <div
+              style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto"
+            >
+              <div class="pesquisa box">
+                <form
+                  action="https://doity.com.br/admin/pesquisas/edit/1402"
+                  novalidate="novalidate"
+                  id="PesquisaAdminEditForm"
+                  method="post"
+                  accept-charset="utf-8"
+                >
+                  <div style="display: none">
+                    <input type="hidden" name="_method" value="POST" /><input
+                      type="hidden"
+                      name="data[_Token][key]"
+                      value="5a3c5a841c78b87ced00f2e0907d6b7bc46e8c517c789f1a3da6aa99bd4510b9f9cc401175324900a79bf924f1bb6cfee418594526a781b44ce490a8483d8a34"
+                      id="Token910137220"
+                    />
+                  </div>
+                  <div class="title">
+                    <h2>Configurações da Pesquisa de Satisfação</h2>
+                  </div>
+
+                  <div class="content forms config_pesquisa">
+                    <div class="mensagem"></div>
+
+                    <input
+                      type="hidden"
+                      name="data[Pesquisa][id]"
+                      value="1402"
+                      id="PesquisaId"
+                    />
+                    <div class="input text required">
+                      <label for="PesquisaNome">Nome da pesquisa*</label
+                      ><input
+                        name="data[Pesquisa][nome]"
+                        value="Pesquisa de Qualidade do Evento"
+                        maxlength="255"
+                        type="text"
+                        id="PesquisaNome"
+                        required="required"
+                      />
+                    </div>
+                    <div class="input textarea">
+                      <label for="PesquisaDescricao"
+                        >Descrição da pesquisa</label
+                      ><textarea
+                        name="data[Pesquisa][descricao]"
+                        class="ckeditor"
+                        cols="30"
+                        rows="6"
+                        id="PesquisaDescricao"
+                      >
+                        &lt;p&gt;Queremos saber como foi a sua experi&amp;ecirc;ncia neste evento. Suas respostas nos ajudar&amp;atilde;o a melhorar continuamente a organiza&amp;ccedil;&amp;atilde;o, o conte&amp;uacute;do e a qualidade dos pr&amp;oacute;ximos encontros. Obrigado por dedicar alguns minutos para contribuir com seu feedback!&lt;/p&gt;
+                        </textarea
+                      >
+                    </div>
+                    <div class="input text required">
+                      <label for="PesquisaDataDisponivel"
+                        >Data de início da pesquisa*</label
+                      ><input
+                        name="data[Pesquisa][data_disponivel]"
+                        value="01/12/2025"
+                        type="text"
+                        id="PesquisaDataDisponivel"
+                        required="required"
+                      />
+                    </div>
+                    <div class="input text required">
+                      <label for="PesquisaDataTermino"
+                        >Data término da pesquisa*</label
+                      ><input
+                        name="data[Pesquisa][data_termino]"
+                        value="31/12/2025"
+                        type="text"
+                        id="PesquisaDataTermino"
+                        required="required"
+                      />
+                    </div>
+                    <div class="input checkbox">
+                      <input
+                        type="hidden"
+                        name="data[Pesquisa][ativo]"
+                        id="PesquisaAtivo_"
+                        value="0"
+                      /><input
+                        type="checkbox"
+                        name="data[Pesquisa][ativo]"
+                        checked="checked"
+                        value="1"
+                        id="PesquisaAtivo"
+                      /><label for="PesquisaAtivo">Disponível</label>
+                    </div>
+                    <div class="opcoes_enviar_para">
+                      <fieldset>
+                        <legend>Enviar pesquisa para*</legend>
+                        <input
+                          type="radio"
+                          name="data[Pesquisa][enviar_para]"
+                          id="PesquisaEnviarPara1"
+                          value="1"
+                          required="required"
+                        /><label for="PesquisaEnviarPara1"
+                          >Só credenciados</label
+                        ><input
+                          type="radio"
+                          name="data[Pesquisa][enviar_para]"
+                          id="PesquisaEnviarPara0"
+                          value="0"
+                          checked="checked"
+                          required="required"
+                        /><label for="PesquisaEnviarPara0"
+                          >Todos confirmados</label
+                        >
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="clear"></div>
+
+              <div class="row buttons" style="margin-left: 20px">
+                <div class="submit">
+                  <input type="submit" value="Alterar" />
+                </div>
+                <div style="display: none">
+                  <input
+                    type="hidden"
+                    name="data[_Token][fields]"
+                    value="0642377622d3dff524d176deee4d3237a42b40ba%3APesquisa.id"
+                    id="TokenFields218289597"
+                  /><input
+                    type="hidden"
+                    name="data[_Token][unlocked]"
+                    value=""
+                    id="TokenUnlocked757847620"
+                  />
+                </div>
+                <div class="cancel">
+                  <a href="https://doity.com.br/admin/pesquisas/index/279481"
+                    >Cancelar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Bar -->
+            <footer-bar></footer-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="modal-info-feedback-pos-evento"
+      class="modal hide fade modal-medium"
+      role="dialog"
+      aria-labelledby="modal-info-feedback-pos-eventoLabel"
+      aria-hidden="true"
+      style="top: 280px"
+    >
+      <button
+        type="button"
+        id="btn-fechar-info-feedback-pos-evento"
+        class="close feedback-pos-close"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+      <div
+        class="modal-body modal-feed-back-pos-evento"
+        style="font-size: 13px; min-height: 470px"
+      >
+        <h1>Queremos a sua opinião!</h1>
+
+        <p>Prezado(a) <b>Administrator</b>,</p>
+
+        <p>
+          A Doity evoluiu todos esses anos sempre ouvindo o feedback dos nossos
+          clientes e não queremos parar por aqui!
+        </p>
+
+        <p>
+          Sabemos como é difícil e trabalhoso organizar eventos, e nossa missão
+          é justamente facilitar esse trabalho e te ajudar a focar no que é mais
+          importante: a qualidade do seu evento!
+        </p>
+
+        <p>
+          E para fazer uma plataforma cada vez melhor, queremos a sua ajuda
+          respondendo um rápido questionário
+        </p>
+
+        <p id="strong-modal-feedback">Muito obrigado e até o próximo evento!</p>
+
+        <div>
+          <a
+            href="https://forms.gle/N36a7xuTSTG9S8qXA"
+            target="_blank"
+            id="reponder-questionario-destruir-modal"
+            ><button id="btn-modal-feedback-pos-evento">
+              Responder Questionario
+            </button></a
+          >
+
+          <a href="#" id="responder-mais-tarde-feedback-pos-modal"
+            >Responder Mais Tarde</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts para importação dos componentes -->
+    <script src="../../components/ajax-loader.js" defer></script>
+    <script src="../../components/main-menu.js" defer></script>
+    <script src="../../components/iframe-ns.js" defer></script>
+    <script src="../../components/sidebar-menu.js" defer></script>
+    <script src="../../components/modal-credenciamento.js" defer></script>
+    <script src="../../components/headbar-doity.js" defer></script>
+    <script src="../../components/footer-bar.js" defer></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
