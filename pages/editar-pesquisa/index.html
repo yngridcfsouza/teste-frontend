@@ -237,8 +237,8 @@
                           border: none;
                           cursor: pointer;
                           transition: opacity 0.3s ease;
-                          border-radius: 8px;       /* Leve arredondamento, quase quadrado */
-                          display: inline-block;    /* Garante comportamento de botão para o <a> */
+                          border-radius: 8px;
+                          display: inline-block;
                         }
 
                         /* Efeito Hover (ao passar o mouse) */
@@ -255,26 +255,22 @@
 
                         /* --- Botão SECUNDÁRIO (Cancelar) --- */
                         .btn-doity-secondary {
-                            background-color: #f8f9fa; /* Fundo cinza bem claro/branco */
-                            color: #555;               /* Texto cinza escuro */
-                            border: 1px solid #ddd;    /* Borda sutil para destacar do fundo branco */
+                            background-color: #f8f9fa;
+                            color: #555;
+                            border: 1px solid #ddd;
                         }
 
                         @media (max-width: 768px) {
                           .doity-buttons {
-                              /* 'column' empilha verticalmente, 'reverse' inverte a ordem.
-                                Resultado: O botão "Salvar" (último no HTML) vai para o topo. */
                               flex-direction: row-reverse;
-
-                              /* Opcional: ajusta o espaçamento vertical se necessário */
                               gap: 15px;
                           }
 
                           .btn-doity-primary,
                           .btn-doity-secondary {
-                              width: 100%;       /* Força a largura máxima */
-                              display: block;    /* Garante comportamento de bloco para o link <a> */
-                              text-align: center; /* Garante que o texto fique no meio */
+                              width: 100%;
+                              display: block;
+                              text-align: center;
                           }
                       }
                     </style>
