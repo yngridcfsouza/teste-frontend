@@ -1,0 +1,49 @@
+.modern .calendar-field input[type="date"],
+.modern .calendar-field input[type="datetime-local"] {
+  all: unset; /* limpa TUDO que o jQuery UI mexe */
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 12px 40px 12px 14px;
+
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  outline: none;
+  display: block;
+}
+
+/* Ícone do calendário */
+.modern .calendar-field {
+  position: relative;
+}
+
+.modern .calendar-field input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 12px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Ícone customizado */
+.modern .calendar-field::after {
+  content: "📅";
+  font-size: 18px;
+  color: #6b7280;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Foco */
+.modern .calendar-field input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.3);
+}

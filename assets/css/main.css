@@ -22,6 +22,7 @@
 @import url("../../assets/css/admin_responsive.css");
 @import url("../../assets/css/font-awesome.min.css");
 @import url("../../assets/css/croppie.css");
+@import url("../../assets/css/modern/calendar.css");
 
 @font-face {
   font-family: 'FontAwesome';
@@ -555,18 +556,18 @@
                 }
 
                 .opcoes_enviar_para label {
-                  float: left;
-                  margin-right: 10px;
-                  margin-left: 10px;
+                  float: none !important;
+                  display: inline-block;
+                  margin: 0 24px 0 6px !important;
                 }
 
                 .opcoes_enviar_para {
-                  margin-top: -5px;
+                  margin-top: 24px !important;
                 }
 
                 .opcoes_enviar_para legend {
-                  margin-bottom: 1px;
-                  font-weight: bold;
+                  margin-bottom: 12px !important;
+                  font-weight: 600;
                   color: rgb(28, 28, 28);
                   margin-left: 1px;
                 }
@@ -574,3 +575,38 @@
                   margin: 10px 0 0 0;
                 }
 
+
+
+.required-asterisk {
+  color: #FF2B34 !important;
+}
+.config_pesquisa .input.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 8px 0;
+}
+.config_pesquisa .input.checkbox input[type="checkbox"] {
+  margin: 0;
+}
+.config_pesquisa .opcoes_enviar_para fieldset {
+  border: none;
+  padding: 0;
+}
+.config_pesquisa .opcoes_enviar_para input[type="radio"] {
+  float: none !important;
+  margin: 0 6px 0 0 !important;
+  accent-color: #ff2b34;
+}
+.config_pesquisa .opcoes_enviar_para fieldset input[type="radio"],
+.config_pesquisa .opcoes_enviar_para fieldset label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 440px;
+}

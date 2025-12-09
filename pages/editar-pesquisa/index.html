@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="robots" content="noindex" />
 
-    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/modern/button.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
     <link
       rel="apple-touch-icon"
@@ -41,7 +42,40 @@
             <!-- headbar doity -->
             <headbar-doity></headbar-doity>
 
-            <div class="__left __center-mobile">
+            <div class="__left __center-mobile" style="flex-direction: column;">
+              <div class="breadcrumb" style="padding: 0 35px; min-height: fit-content;">
+                <p
+                  class="d_text-darker d_font_size-10 d_display-flex d_margin_bottom-10"
+                >
+                  <a href="https://doity.com.br/admin/eventos/painel/279481"
+                    >Painel</a
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.9585 7.29199L11.8752 10.0003L8.9585 12.7087"
+                      stroke="#FF2B34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path></svg
+                  >Pesquisa de Satisfação
+                </p>
+                <span
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: fit-content;
+                  "
+                  >Editar Pesquisa de Satisfação</span
+                >
+              </div>
+
               <div
               style="width: 100%; max-width: 1366px; margin: 20px auto 0 auto"
             >
@@ -65,7 +99,7 @@
                     <h2>Configurações da Pesquisa de Satisfação</h2>
                   </div>
 
-                  <div class="content forms config_pesquisa">
+                  <div class="content forms config_pesquisa" style="margin-bottom: 20px;">
                     <div class="mensagem"></div>
 
                     <input
@@ -75,8 +109,9 @@
                       id="PesquisaId"
                     />
                     <div class="input text required">
-                      <label for="PesquisaNome">Nome da pesquisa*</label
-                      ><input
+                      <label for="PesquisaNome">Nome*</label>
+
+                      <input
                         name="data[Pesquisa][nome]"
                         value="Pesquisa de Qualidade do Evento"
                         maxlength="255"
@@ -85,43 +120,50 @@
                         required="required"
                       />
                     </div>
-                    <div class="input textarea">
+
+                    <div class="input textarea" style="margin-bottom: 20px;">
                       <label for="PesquisaDescricao"
-                        >Descrição da pesquisa</label
-                      ><textarea
+                        >Descrição*</label
+                      >
+                      <input
                         name="data[Pesquisa][descricao]"
                         class="ckeditor"
-                        cols="30"
-                        rows="6"
+                        maxlength="255"
+                        style="height: 123px"
+                        type="text"
                         id="PesquisaDescricao"
-                      >
-                        &lt;p&gt;Queremos saber como foi a sua experi&amp;ecirc;ncia neste evento. Suas respostas nos ajudar&amp;atilde;o a melhorar continuamente a organiza&amp;ccedil;&amp;atilde;o, o conte&amp;uacute;do e a qualidade dos pr&amp;oacute;ximos encontros. Obrigado por dedicar alguns minutos para contribuir com seu feedback!&lt;/p&gt;
-                        </textarea
-                      >
-                    </div>
-                    <div class="input text required">
-                      <label for="PesquisaDataDisponivel"
-                        >Data de início da pesquisa*</label
-                      ><input
-                        name="data[Pesquisa][data_disponivel]"
-                        value="01/12/2025"
-                        type="text"
-                        id="PesquisaDataDisponivel"
                         required="required"
-                      />
+                      >
+
+                      </input
+                     >
                     </div>
-                    <div class="input text required">
-                      <label for="PesquisaDataTermino"
-                        >Data término da pesquisa*</label
-                      ><input
-                        name="data[Pesquisa][data_termino]"
-                        value="31/12/2025"
-                        type="text"
-                        id="PesquisaDataTermino"
-                        required="required"
-                      />
+
+                    <label for="PesquisaDataDisponivel" style="font-weight:500;">Período</label>
+                    <div class="calendar" style="display: flex; align-items: center; gap: 16px; width: 410px;">
+                      <div class="input text required">
+                        <input
+                          name="data[Pesquisa][data_disponivel]"
+                          placeholder="Data de início"
+                          onfocus="(this.type='date')"
+                          onblur="(this.type='text')"
+                          id="PesquisaDataDisponivel"
+                          required="required"
+                        />
+                      </div>
+                      <div class="input date required">
+                        <input
+                          name="data[Pesquisa][data_termino]"
+                          placeholder="Data de término"
+                          onfocus="(this.type='date')"
+                          onblur="(this.type='text')"
+                          id="PesquisaDataTermino"
+                          required="required"
+                        />
+                      </div>
                     </div>
-                    <div class="input checkbox">
+
+                    <div class="input checkbox ds-checkbox-line" style="display:flex; align-items:center; gap:8px; margin:16px 0 12px 0;">
                       <input
                         type="hidden"
                         name="data[Pesquisa][ativo]"
@@ -132,19 +174,19 @@
                         name="data[Pesquisa][ativo]"
                         checked="checked"
                         value="1"
-                        id="PesquisaAtivo"
+                        id="PesquisaAtivo" style="margin:0; width:16px; height:16px; accent-color:#ff2b34;"
                       /><label for="PesquisaAtivo">Disponível</label>
                     </div>
-                    <div class="opcoes_enviar_para">
-                      <fieldset>
-                        <legend>Enviar pesquisa para*</legend>
+                    <div class="opcoes_enviar_para ds-radio-group" style="margin-top:24px;">
+                      <fieldset class="required" style="border:none; padding:0;">
+                        <legend style="margin-bottom:12px; font-weight:600; color:#1e1e1e;">Enviar pesquisa para</legend>
                         <input
                           type="radio"
                           name="data[Pesquisa][enviar_para]"
                           id="PesquisaEnviarPara1"
                           value="1"
-                          required="required"
-                        /><label for="PesquisaEnviarPara1"
+                          required="required" style="float:none; margin:0 6px 0 0; accent-color:#ff2b34;"
+                        /><label for="PesquisaEnviarPara1" style="float:none; display:inline-block; margin:0 24px 0 6px;"
                           >Só credenciados</label
                         ><input
                           type="radio"
@@ -152,11 +194,31 @@
                           id="PesquisaEnviarPara0"
                           value="0"
                           checked="checked"
-                          required="required"
-                        /><label for="PesquisaEnviarPara0"
-                          >Todos confirmados</label
+                          required="required" style="float:none; margin:0 6px 0 0; accent-color:#ff2b34;"
+                        /><label for="PesquisaEnviarPara0" style="float:none; display:inline-block; margin:0 24px 0 6px;"
+                          >Todos os confirmados</label
                         >
                       </fieldset>
+                    </div>
+
+                    <div class="form-divider" style="border-top:1px solid #e5e7eb; margin:16px 0 0 0;"></div>
+                    <!-- <div class="form-actions" style="display:flex; flex-direction:row; flex-wrap:nowrap; gap:12px; justify-content:space-between; align-items:center; margin-top:16px;">
+                      <button
+                        type="submit"
+                        style="order:1; height:44px; padding:0 20px; border:none; border-radius:8px; background:#ff2b34; color:#fff; font-weight:600; flex:0 0 auto;"
+                      >
+                        Salvar
+                      </button>
+                      <a
+                        href="https://doity.com.br/admin/pesquisas/index/279481"
+                        style="order:2; display:inline-flex; align-items:center; justify-content:center; height:44px; padding:0 16px; border:1px solid #cdd1d9; border-radius:8px; color:#4a4a4a; background:#f3f4f6; text-decoration:none; flex:0 0 auto;"
+                      >
+                        Cancelar
+                      </a>
+                    </div> -->
+                    <div class="doity-buttons">
+                      <button type="submit" class="btn-doity-primary">Salvar</button>
+                      <a href="#" class="btn-doity-secondary">Cancelar</a>
                     </div>
                   </div>
                 </form>
@@ -164,29 +226,7 @@
 
               <div class="clear"></div>
 
-              <div class="row buttons" style="margin-left: 20px">
-                <div class="submit">
-                  <input type="submit" value="Alterar" />
-                </div>
-                <div style="display: none">
-                  <input
-                    type="hidden"
-                    name="data[_Token][fields]"
-                    value="0642377622d3dff524d176deee4d3237a42b40ba%3APesquisa.id"
-                    id="TokenFields218289597"
-                  /><input
-                    type="hidden"
-                    name="data[_Token][unlocked]"
-                    value=""
-                    id="TokenUnlocked757847620"
-                  />
-                </div>
-                <div class="cancel">
-                  <a href="https://doity.com.br/admin/pesquisas/index/279481"
-                    >Cancelar</a
-                  >
-                </div>
-              </div>
+
             </div>
 
             <!-- Footer Bar -->

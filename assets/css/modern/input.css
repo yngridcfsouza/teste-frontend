@@ -1,0 +1,52 @@
+/* wrapper */
+.calendar {
+  display: flex;
+  gap: 24px; /* espaçamento entre os dois inputs */
+  align-items: flex-start;
+}
+
+/* caixa externa */
+.calendar-field {
+  width: 220px;
+}
+
+/* estilo do input */
+.calendar-field input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px 40px 12px 14px; /* espaço para o ícone */
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b7280; /* cinza suave */
+
+  background: #ffffff;
+  border: 1px solid #d1d5db; /* borda cinza clara */
+  border-radius: 10px;
+
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* foco */
+.calendar-field input[type="datetime-local"]:focus {
+  border-color: #818cf8; /* lilás suave */
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+/* placeholder estilizado */
+.calendar-field input[type="datetime-local"]::placeholder {
+  color: #9ca3af;
+}
+
+/* ícone do date-time alinhado à direita (Chrome/Edge) */
+.calendar-field input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 12px;
+  opacity: 0.6;
+  cursor: pointer;
+  filter: invert(40%);
+}
+
+/* ícone no hover */
+.calendar-field input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}

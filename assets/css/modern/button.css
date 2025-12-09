@@ -1,0 +1,147 @@
+
+button,
+a.btn {
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Container opcional para alinhamento */
+.doity-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* PADDING DO FIGMA */
+  padding: 12px 20px;
+
+  /* ALTURA FINAL */
+  min-height: 44px;
+
+  /* BORDA DO DESIGN */
+  border-radius: 8px;
+
+  /* TEXTO */
+  font-size: 16px;
+  font-weight: 600;
+
+  /* TRANSIÇÃO SUAVE */
+  transition: 0.2s ease;
+
+  /* Para links */
+  text-decoration: none;
+}
+
+/* ============================================================
+   PRIMARY — BOTÃO VERMELHO DOITY
+============================================================ */
+.btn-primary {
+  background: #ff2b34;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #e0222c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 43, 52, 0.25);
+}
+
+.btn-primary:active {
+  background: #c81d26;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background: #f3a5aa;
+  color: #fff;
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ============================================================
+   SECONDARY — BOTÃO CINZA DO Figma
+============================================================ */
+.btn-secondary {
+  background: #f5f6f7;
+  color: #4a4a4a;
+  border: 1px solid #cdd1d9;
+}
+
+.btn-secondary:hover {
+  background: #e9eaec;
+  border-color: #babfc7;
+  color: #333;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  background: #dfe1e4;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   OUTLINE (se precisar)
+============================================================ */
+.btn-outline {
+  background: #ffffff;
+  color: #ff2b34;
+  border: 1px solid #ff2b34;
+}
+
+.btn-outline:hover {
+  background: #fff3f4;
+}
+
+.btn-outline:active {
+  background: #ffe7e8;
+}
+
+/* ============================================================
+   FULL WIDTH (mobile)
+============================================================ */
+.btn-full {
+  width: 100%;
+}
+
+/* ============================================================
+   ORDEM NO MOBILE (seguir Figma)
+============================================================ */
+@media (max-width: 480px) {
+  .doity-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  /* Salvar sempre primeiro */
+  .btn-primary {
+    order: 1;
+  }
+
+  /* Cancelar sempre depois */
+  .btn-secondary {
+    order: 2;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
