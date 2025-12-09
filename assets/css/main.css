@@ -610,3 +610,47 @@
   gap: 16px;
   width: 440px;
 }
+
+/* Container dos botões */
+                        .doity-buttons {
+                            display: flex;
+                            gap: 15px; /* Espaço entre os botões */
+                            justify-content: flex-start; /* Alinha à esquerda (use 'flex-end' para alinhar à direita) */
+                            align-items: center;
+                            padding: 20px 0;
+                            font-family: Arial, sans-serif; /* Fonte padrão limpa */
+                        }
+
+                        /* Estilo BÁSICO compartilhado entre os dois botões */
+                        .btn-doity-primary,
+                        .btn-doity-secondary {
+                            padding: 10px 25px;       /* Altura e largura internas */
+                            font-size: 14px;
+                            font-weight: bold;        /* Texto em negrito */
+                            text-transform: uppercase; /* Texto em caixa alta */
+                            text-decoration: none;    /* Remove o sublinhado do link <a> */
+                            border: none;
+                            cursor: pointer;
+                            transition: opacity 0.3s ease;
+                            border-radius: 2px;       /* Leve arredondamento, quase quadrado */
+                            display: inline-block;    /* Garante comportamento de botão para o <a> */
+                        }
+
+                        /* Efeito Hover (ao passar o mouse) */
+                        .btn-doity-primary:hover,
+                        .btn-doity-secondary:hover {
+                            opacity: 0.9;
+                        }
+
+                        /* --- Botão PRIMÁRIO (Salvar) --- */
+                        .btn-doity-primary {
+                            background-color: #ff2b34;
+                            color: white;
+                        }
+
+                        /* --- Botão SECUNDÁRIO (Cancelar) --- */
+                        .btn-doity-secondary {
+                            background-color: #f8f9fa; /* Fundo cinza bem claro/branco */
+                            color: #555;               /* Texto cinza escuro */
+                            border: 1px solid #ddd;    /* Borda sutil para destacar do fundo branco */
+                        }

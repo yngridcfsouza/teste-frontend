@@ -217,9 +217,67 @@
                       </a>
                     </div> -->
                     <div class="doity-buttons">
+                      <button href="https://doity.com.br/admin/pesquisas/index/279481" class="btn-doity-secondary">Cancelar</button>
                       <button type="submit" class="btn-doity-primary">Salvar</button>
-                      <a href="#" class="btn-doity-secondary">Cancelar</a>
                     </div>
+                    <style>
+                        .doity-buttons {
+                          display: flex;
+                          gap: 10px;
+                          justify-content: space-between;
+                          align-items: center;
+                          padding: 20px 10px;
+                        }
+
+                        /* Estilo compartilhado entre os dois botões */
+                        .btn-doity-primary,
+                        .btn-doity-secondary {
+                          padding: 10px 20px;
+                          text-decoration: none;
+                          border: none;
+                          cursor: pointer;
+                          transition: opacity 0.3s ease;
+                          border-radius: 8px;       /* Leve arredondamento, quase quadrado */
+                          display: inline-block;    /* Garante comportamento de botão para o <a> */
+                        }
+
+                        /* Efeito Hover (ao passar o mouse) */
+                        .btn-doity-primary:hover,
+                        .btn-doity-secondary:hover {
+                            opacity: 0.7;
+                        }
+
+                        /* --- Botão PRIMÁRIO (Salvar) --- */
+                        .btn-doity-primary {
+                            background-color: #ff2b34;
+                            color: white;
+                        }
+
+                        /* --- Botão SECUNDÁRIO (Cancelar) --- */
+                        .btn-doity-secondary {
+                            background-color: #f8f9fa; /* Fundo cinza bem claro/branco */
+                            color: #555;               /* Texto cinza escuro */
+                            border: 1px solid #ddd;    /* Borda sutil para destacar do fundo branco */
+                        }
+
+                        @media (max-width: 768px) {
+                          .doity-buttons {
+                              /* 'column' empilha verticalmente, 'reverse' inverte a ordem.
+                                Resultado: O botão "Salvar" (último no HTML) vai para o topo. */
+                              flex-direction: row-reverse;
+
+                              /* Opcional: ajusta o espaçamento vertical se necessário */
+                              gap: 15px;
+                          }
+
+                          .btn-doity-primary,
+                          .btn-doity-secondary {
+                              width: 100%;       /* Força a largura máxima */
+                              display: block;    /* Garante comportamento de bloco para o link <a> */
+                              text-align: center; /* Garante que o texto fique no meio */
+                          }
+                      }
+                    </style>
                   </div>
                 </form>
               </div>
